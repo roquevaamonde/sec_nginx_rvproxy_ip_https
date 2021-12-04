@@ -12,7 +12,7 @@ Acceder al directorio de nginx conf.d y copiar el archivo default.conf y ponerle
 
 editar pl_default y añadir el siguiente server:
 
-`
+```
     server {
         listen 443 ssl default_server;
         deny all;
@@ -20,12 +20,12 @@ editar pl_default y añadir el siguiente server:
         ssl_certificate         /etc/nginx/conf.d/certificate.crt;
         ssl_certificate_key     /etc/nginx/conf.d/privateKey.key;
     }
-`
+```
 
 ## MODIFICAR VARIABLES EN secure_https_ip.sh:
 
 
-`
+```
 #!/usr/bin/env bash
 
 workdir=/nginx-reverse-proxy-with-certbot-master
@@ -33,7 +33,7 @@ confd=$workdir/conf.d
 historico=$confd/ip_historica.ip
 domain="dominio.ddns.net"
 dns="8.8.8.8"
-`
+```
 
 
 
