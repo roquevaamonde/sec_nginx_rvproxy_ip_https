@@ -4,7 +4,7 @@ Este script funciona en el siguiente supuesto:
 - Dominio configurado a travs de ddns e ip publica dinamica
 - Es necesario disponer del comando nslookup
 
-# ARCHIVO DE CONFIGURACION:
+## ARCHIVO DE CONFIGURACION:
 Es necesario crear una plantilla de nuestro archivo de configuracion de nginx:
 Acceder al directorio de nginx conf.d y copiar el archivo default.conf y ponerle un nombre tipo pl_default (no poner la extension .conf para no confindir al nginx)
 
@@ -21,7 +21,7 @@ editar pl_default y añadir el siguiente server:
     }`
 
 
-# MODIFICAR VARIABLES EN secure_https_ip.sh:
+## MODIFICAR VARIABLES EN secure_https_ip.sh:
 
 
 `#!/usr/bin/env bash
@@ -29,7 +29,7 @@ editar pl_default y añadir el siguiente server:
 workdir=/nginx-reverse-proxy-with-certbot-master
 confd=$workdir/conf.d
 historico=$confd/ip_historica.ip
-domain="rhosting.ddns.net"
+domain="dominio.ddns.net"
 dns="8.8.8.8"`
 
 

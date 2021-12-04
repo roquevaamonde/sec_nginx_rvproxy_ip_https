@@ -3,7 +3,7 @@
 workdir=/nginx-reverse-proxy-with-certbot-master
 confd=$workdir/conf.d
 historico=$confd/ip_historica.ip
-domain="rhosting.ddns.net"
+domain="dominio.ddns.net"
 dns="8.8.8.8"
 ip_actual=$(nslookup $domain | grep Address |  grep -v $dns | awk '{ print $NF }')
 
