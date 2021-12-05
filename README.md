@@ -33,6 +33,7 @@ confd=$workdir/conf.d
 historico=$confd/ip_historica.ip
 domain="dominio.ddns.net"
 dns="8.8.8.8"
+plantilla="ex_default"
 ```
 
 
