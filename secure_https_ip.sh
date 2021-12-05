@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-workdir=/nginx-reverse-proxy-with-certbot-master
+workdir=/nginx-reverse-proxy
 confd=$workdir/conf.d
 historico=$confd/ip_historica.ip
 domain="dominio.ddns.net"
