@@ -6,7 +6,7 @@ historico=$confd/ip_historica.ip
 domain="dominio.ddns.net"
 dns="8.8.8.8"
 ip_actual=$(nslookup $domain | grep Address |  grep -v $dns | awk '{ print $NF }')
-plantilla="ex_default"
+plantilla="pl_default"
 
 if [ $ip_actual != $(cat $historico) ];
   then
